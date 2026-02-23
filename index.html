@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+
+    <!-- FontAwesome CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- Bootstrap CSS  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-light">
+    <header id="header">
+        <div class="container border-bottom mt-5 pb-4">
+            <div class="row my-3">
+                <h1>Job Application Tracker</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card text-center p-3">
+                        <h5>Total</h5>
+                        <p id="total-jobs" class="total-job mb-0 fs-4">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-3">
+                        <h5>Interview</h5>
+                        <p id="interview-count" class="interview-job mb-0 fs-4 text-success">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center p-3">
+                        <h5>Rejected</h5>
+                        <p id="rejected-count" class="rejected-job mb-0 fs-4 text-danger">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section my-4">
+            <div class="container">
+                <div class="row align-items-center mb-2">
+                    <div class="col-6"><h2>Available Jobs</h2></div>
+                    <div id="available-jobs-count" class="col-6 text-end">
+
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <button id="" class="btn btn-white tab-btn active" data-tab="all">All</button>
+                    <button id="" class="btn btn-white tab-btn" data-tab="interview">Interview</button>
+                    <button id="" class="btn btn-white tab-btn" data-tab="rejected">Rejected</button>
+                </div>
+                <div class="row mb-3">
+                    <div id="jobs-container" class="col-md-12">
+                        <!-- Job cards will be appended here -->
+                    </div>
+                     <div class="no-jobs text-center">
+                        <img src="./jobs.png" alt="No Jobs">
+                        <h2>No Jobs Available</h2>
+                        <p>Check back soon for new job opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
